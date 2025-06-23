@@ -2,8 +2,8 @@
 site_name: "Documentation"
 site_url: "https://docs.rockylinux.org/"
 docs_dir: "docs/content/docs"
-repo_url: https://github.com/rocky-linux/documentation
-repo_name: rocky-linux/documentation
+repo_url: https://github.com/wsoyinka/rockydocs2
+repo_name: wsoyinka/rockydocs2
 edit_uri: "edit/main/docs/"
 
 theme:
@@ -105,4 +105,4 @@ extra:
     - icon: material/home
       link: https://rockylinux.org
 
-copyright: Copyright &copy; 2023 The Rocky Enterprise Software Foundation
+copyright: Copyright &copy; 2026 The Rocky Enterprise Software Foundation
