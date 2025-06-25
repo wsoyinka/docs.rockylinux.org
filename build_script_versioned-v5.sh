@@ -65,11 +65,11 @@ mike deploy 9
 
 # Deploy version 10 as latest
 echo "Deploying Rocky Linux 10 (Latest)..."
-mike deploy 10 latest
+mike deploy 10
 
 # Set latest as default
 echo "Setting default version..."
-mike set-default latest
+mike set-default 10
 
 # Build static site by serving the gh-pages content
 echo "Generating static site..."
