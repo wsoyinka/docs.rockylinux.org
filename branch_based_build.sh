@@ -14,8 +14,8 @@ rm -rf rockydocs3-* docs site 2>/dev/null || true
 
 # Git setup for mike
 echo "Setting up git configuration..."
-git config user.name "Netlify Build"
-git config user.email "build@netlify.com"
+git config user.name "wsoyinka"
+git config user.email "webmaster@rockylinux.org"
 
 # Force clean git state for consistent builds
 echo "Setting up clean git state..."
