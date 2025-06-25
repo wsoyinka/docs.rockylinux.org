@@ -12,10 +12,6 @@ pip install -r requirements.txt
 echo "Force cleaning any existing directories..."
 rm -rf rockydocs3-* docs site 2>/dev/null || true
 
-# Git setup for mike
-echo "Setting up git configuration..."
-git config user.name "wsoyinka"
-git config user.email "webmaster@rockylinux.org"
 
 # Force clean git state for consistent builds
 echo "Setting up clean git state..."
@@ -26,6 +22,10 @@ fi
 
 echo "Initializing fresh git repository..."
 git init
+# Git setup for mike
+echo "Setting up git configuration..."
+git config user.name "wsoyinka"
+git config user.email "webmaster@rockylinux.org"
 git add .
 git commit -m "Fresh commit for Netlify build $(date)"
 
