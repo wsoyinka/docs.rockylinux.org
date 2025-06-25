@@ -57,15 +57,15 @@ echo "Building documentation versions with mike..."
 
 # Deploy version 8
 echo "Deploying Rocky Linux 8..."
-mike deploy 8
+mike deploy 8 --update-aliases
 
 # Deploy version 9
 echo "Deploying Rocky Linux 9..."
-mike deploy 9
+mike deploy 9 --update-aliases
 
 # Deploy version 10 as latest
 echo "Deploying Rocky Linux 10 (Latest)..."
-mike deploy 10
+mike deploy 10 --update-aliases
 
 # Set latest as default
 echo "Setting default version..."
