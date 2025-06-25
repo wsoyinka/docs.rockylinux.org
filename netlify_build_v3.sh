@@ -73,19 +73,19 @@ echo "Building with mike versioning..."
 
 # Deploy versions with verbose output
 echo "Deploying Rocky Linux 8..."
-mike deploy 8 rocky8 --title="Rocky Linux 8" || {
+mike deploy 8  || {
     echo "❌ Failed to deploy version 8"
     exit 1
 }
 
 echo "Deploying Rocky Linux 9..."
-mike deploy 9 rocky9 --title="Rocky Linux 9" || {
+mike deploy 9  || {
     echo "❌ Failed to deploy version 9"
     exit 1
 }
 
 echo "Deploying Rocky Linux 10..."
-mike deploy 10 latest --title="Rocky Linux 10 (Latest)" || {
+mike deploy 10 latest  || {
     echo "❌ Failed to deploy version 10"
     exit 1
 }
