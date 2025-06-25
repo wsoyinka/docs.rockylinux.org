@@ -39,11 +39,15 @@ else
 fi
 
 # Initialize git repo if needed
-if [ ! -d ".git" ]; then
-    git init
-    git config user.name "Netlify Build" 
-    git config user.email "build@netlify.com"
-fi
+#if [ ! -d ".git" ]; then
+#    git init
+#    git config user.name "Netlify Build" 
+#    git config user.email "build@netlify.com"
+#fi
+
+
+git config  --global user.name wsoyinka
+git config  --global user.email webmaster@rockylinux.org
 
 # Add and commit current state for mike
 git add -A
