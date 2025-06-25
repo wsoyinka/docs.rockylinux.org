@@ -15,18 +15,11 @@
   to = "/latest/"
   status = 302
 
-# Fix the symlink issue - redirect latest to actual version 10
 [[redirects]]
   from = "/latest/*"
-  to = "/10/:splat"
+  to = "/latest/:splat"
   status = 200
 
-[[redirects]]
-  from = "/latest"
-  to = "/10/"
-  status = 200
-
-# Direct version access (these should work already)
 [[redirects]]
   from = "/8/*"
   to = "/8/:splat"
@@ -40,17 +33,6 @@
 [[redirects]]
   from = "/10/*"
   to = "/10/:splat"
-  status = 200
-
-# Alias redirects for convenience
-[[redirects]]
-  from = "/rocky8/*"
-  to = "/8/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/rocky9/*"
-  to = "/9/:splat"
   status = 200
 
 # Headers for better caching
