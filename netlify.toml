@@ -1,6 +1,7 @@
 [build]
   publish = "site"
-  command = "./branch_based_build.sh"
+  command = "./branch_based_build-v2.sh"
+  #command = "./branch_based_build.sh"
   #command = "./netlify_build_v3.sh"
   #command = "./build-netlify-v2.sh"
   #command = "./build_script_versioned-v5.sh"
