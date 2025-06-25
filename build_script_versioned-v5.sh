@@ -63,19 +63,19 @@ echo "Building documentation versions with mike..."
 
 # Deploy version 8
 echo "Deploying Rocky Linux 8..."
-mike deploy 8 --update-aliases
+mike deploy 8
 
 # Deploy version 9
 echo "Deploying Rocky Linux 9..."
-mike deploy 9 --update-aliases
+mike deploy 9
 
 # Deploy version 10 as latest
 echo "Deploying Rocky Linux 10 (Latest)..."
-mike deploy 10 --update-aliases
+mike deploy 10 latest
 
 # Set latest as default
 echo "Setting default version..."
-mike set-default 10
+mike set-default latest
 
 # Build static site by serving the gh-pages content
 echo "Generating static site..."
