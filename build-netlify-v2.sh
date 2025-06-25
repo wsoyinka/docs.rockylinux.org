@@ -29,9 +29,9 @@ git commit -m "Update content for Netlify build" || echo "No changes to commit"
 echo "Building with mike versioning..."
 
 # Deploy versions
-mike deploy 8 rocky8 --title="Rocky Linux 8"
-mike deploy 9 rocky9 --title="Rocky Linux 9"
-mike deploy 10 latest --title="Rocky Linux 10 (Latest)"
+mike deploy 8 
+mike deploy 9 
+mike deploy 10 latest 
 mike set-default latest
 
 echo "Extracting built site for Netlify..."
