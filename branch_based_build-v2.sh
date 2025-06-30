@@ -42,7 +42,9 @@ build_version() {
     
     # Clone the specific branch
     local repo_dir="rockydocs3-$version"
-    git clone -b "$branch" https://github.com/wsoyinka/rockydocs3.git "$repo_dir"
+#    git clone -b "$branch" https://github.com/wsoyinka/rockydocs3.git "$repo_dir"
+    git clone -b "$branch" https://github.com/rocky-linux/documentation.git "$repo_dir"
+
     
     # Verify clone worked
     if [ ! -d "$repo_dir" ]; then
