@@ -79,8 +79,8 @@ build_version() {
 }
 
 # Build each version from its respective branch
-build_version "8" "rocky-8" "" ""
-build_version "9" "rocky-9" "" "" 
+#build_version "8" "rocky-8" "" ""
+#build_version "9" "rocky-9" "" "" 
 build_version "10" "main" "latest" ""
 
 echo "Setting default version..."
