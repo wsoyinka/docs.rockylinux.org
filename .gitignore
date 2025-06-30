@@ -5,6 +5,7 @@ build/
 
 # Docs sources
 docs/
+archive/
 
 # mkdocs cache
 .cache
