@@ -34,3 +34,28 @@
     {% endif %}
   {% endif %}
 {% endblock %}
+
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'assets/javascripts/custom.9e5da760.min.js' | url }}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const footer = document.querySelector(".md-footer-meta .md-footer-meta__inner .md-copyright");
+      if (!footer) return;
+
+      const materialLink = Array.from(footer.querySelectorAll("a")).find(link =>
+        link.textContent.trim() === "Material for MkDocs"
+      );
+
+      if (materialLink) {
+        const suffix = document.createElement("span");
+        suffix.innerHTML = '.  Hosted by <a href="https://netlify.app" target="_blank" rel="noopener"><strong>Netlify</strong></a>';
+        materialLink.parentNode.insertBefore(suffix, materialLink.nextSibling);
+      }
+    });
+  </script>
+
+
+
+{% endblock %}
